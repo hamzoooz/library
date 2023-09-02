@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -82,18 +82,22 @@ WSGI_APPLICATION = 'library.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#         # 'ENGINE': 'django.db.backends.mysql',
+#         # 'NAME': 'book_hope_com',
+#         # 'USER': 'book_hope_com',
+#         # 'PASSWORD': 'Hamza@2020',
+#         # # 'PASSWORD': '',
+#         # 'HOST': 'localhost',
+#         # 'PORT': '',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'book_hope_com',
-        # 'USER': 'book_hope_com',
-        # 'PASSWORD': 'Hamza@2020',
-        # # 'PASSWORD': '',
-        # 'HOST': 'localhost',
-        # 'PORT': '',
-    }
+    'default': dj_database_url.parse("postgres://book_hope_com_6aqy_user:VGoXOMVmSnCbEoXEdkgVx5Ow73PpOGGZ@dpg-cjpev3the99c73f82rc0-a.oregon-postgres.render.com/book_hope_com_6aqy")
+    # 'default': dj_database_url.parse(os.environ("DATABASE_URL"))
 }
 
 
