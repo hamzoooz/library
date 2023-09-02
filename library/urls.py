@@ -45,6 +45,9 @@ urlpatterns = [
     # path('', include('adds.urls')),
     path('', include('apis.urls')),
     
+    
+    
+    
 ]
 
 
