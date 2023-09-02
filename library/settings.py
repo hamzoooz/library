@@ -84,15 +84,15 @@ WSGI_APPLICATION = 'library.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'book_hope_com',
-        'USER': 'book_hope_com',
-        'PASSWORD': 'Hamza@2020',
-        # 'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'book_hope_com',
+        # 'USER': 'book_hope_com',
+        # 'PASSWORD': 'Hamza@2020',
+        # # 'PASSWORD': '',
+        # 'HOST': 'localhost',
+        # 'PORT': '',
     }
 }
 
