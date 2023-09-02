@@ -38,7 +38,7 @@
 # for post in posts:
 #     print(post.text)
 
-
+import staticfiles_urlpatterns
 
 # Replace the values below with your own API ID, API hash, and phone number
 from telethon.sync import TelegramClient

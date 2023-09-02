@@ -78,6 +78,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'library.wsgi.application'
 
+# variable 
+# this key for cart to buy get way
+CART_SESSION_ID = 'cart'
+# put second to session id limit 
+# SESSION_COOKIE_AGE = 86400 
+SESSION_COOKIE_AGE = 311040000
+
+
+quantity = 1
+LOGOUT_REDIRECT_URL = 'frontpage'
+# LOGIN_REDIRECT_URL = 'settings'
+LOGIN_URL = 'login'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
