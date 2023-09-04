@@ -36,9 +36,9 @@ from telethon.sync import TelegramClient
 
 async def get_all_ids():
     # Replace the values below with your own API ID, API hash, and phone number
-    api_id = 23741394
-    api_hash = 'ac7aff1d5698c4f832501d4852b31f0a'
-    phone_number = '+249 99 934 7606'
+    api_id = 20688053
+    api_hash = 'e95d0f75b6c68ede3415e8390d1248f0'
+    phone_number = '+256744859083'
 
     # Initialize the Telegram client
     client = TelegramClient('session_name', api_id, api_hash)
