@@ -95,23 +95,23 @@ LOGIN_URL = 'login'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#         # 'ENGINE': 'django.db.backends.mysql',
-#         # 'NAME': 'book_hope_com',
-#         # 'USER': 'book_hope_com',
-#         # 'PASSWORD': 'Hamza@2020',
-#         # # 'PASSWORD': '',
-#         # 'HOST': 'localhost',
-#         # 'PORT': '',
-#     }
-# }
 DATABASES = {
-    'default': dj_database_url.parse("postgres://book_hope_com_6aqy_user:VGoXOMVmSnCbEoXEdkgVx5Ow73PpOGGZ@dpg-cjpev3the99c73f82rc0-a.oregon-postgres.render.com/book_hope_com_6aqy")
-    # 'default': dj_database_url.parse(os.environ("DATABASE_URL"))
+    'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hamzoooz',
+        'USER': 'hamzoooz',
+        'PASSWORD': 'Hamza@2020',
+        # 'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
 }
+# DATABASES = {
+#     'default': dj_database_url.parse("postgres://book_hope_com_6aqy_user:VGoXOMVmSnCbEoXEdkgVx5Ow73PpOGGZ@dpg-cjpev3the99c73f82rc0-a.oregon-postgres.render.com/book_hope_com_6aqy")
+#     # 'default': dj_database_url.parse(os.environ("DATABASE_URL"))
+# }
 
 
 # Password validation
@@ -148,23 +148,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_URL  = '/static/'
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 CKEDITOR_UPLOAD_PATH = 'media/cheditor/'
+
 
 
 

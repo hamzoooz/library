@@ -93,8 +93,10 @@ def book_detail(request, slug):
     
     # ################################
     #  get size of file 
-    file_size = os.path.getsize(link)
-    books.size = file_size
+    print(os.path.getsize(link))
+    if not ( os.path.getsize(link)) :
+        file_size = os.path.getsize(link)
+        books.size = file_size
 
     # with open(link, 'rb') as file:
     #     # Create a PDF reader object
