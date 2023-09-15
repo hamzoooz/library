@@ -10,7 +10,7 @@
         <a href="{% url 'frontpage'  %}" class="text-secondary  p-2 "><i class="fa fa-home"></i> </a><i class="fa fa-caret-right text-secondary  "></i>
         <a href="{% url 'categories'  %}" class="text-secondary  p-2">Collections  </a> <i class="fa fa-caret-right text-secondary  "></i>
         <a href="{% url 'category_detail'  books.category.slug %}" class="text-secondary  p-2 "> {{books.category.name}}  </a> <i class="fa fa-caret-right text-secondary  "></i>
-        <span class="text-secondary  p-2 "> {{books.name}}  </span>
+        {% comment %} <span class="text-secondary  p-2 "> {{books.name}}  </span> {% endcomment %}
     </div>
 </div>
 
@@ -27,11 +27,11 @@
                                     {% if books.selling_price > 0 %}
                                         <input type="hidden"  value="{{ books.id }}" class="book_id" >
                                         {% csrf_token %}
-                                        <div  class="btn btn-warning  w-100 mt-2 addToCartBtn "> <i class="fa fa-shopping-cart"></i> Add to Card </div>
-                                        <a href="#" class="btn btn-success w-100 mt-2 "> <i class="fa fa-eye"></i> Free Sampll </a>
+                                        <div  class="btn btn-warning  w-100 mt-2 addToCartBtn read-link "> <i class="fa fa-shopping-cart"></i> Add to Card </div>
+                                        <a href="#" class="btn btn-success w-100 mt-2  read-link"> <i class="fa fa-eye"></i> Free Sampll </a>
                                     {% else %}
                                         <a download href="{{ books.file.url }}"><button class="btn btn-primary download-link download_link_to_increase w-100 mt-2 "  incres_number_of_download="{{ books.id }}" > <i class="fa fa-download"></i> download</button></a>
-                                        <a href="{{ books.file.url }}"><button class="btn btn-success mt-3 w-100 mt-2 "> <i class="fa fa-eye"></i> Read</button></a>
+                                        <a href="{{ books.file.url }}"><button class="read-link btn btn-success mt-3 w-100 mt-2 "> <i class="fa fa-eye"></i> Read</button></a>
                                     {% endif %}
 
                                 <!-- sharing and reporting and edite -->

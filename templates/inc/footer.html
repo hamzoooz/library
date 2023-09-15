@@ -1,7 +1,7 @@
 <div class="container-fluid shadow text-center "  style="background-color: #f8f9fa;padding: 24px 7px;border-radius: 5px;">
 
 {% if request.user.is_authenticated %}
-<footer class="footer  my-5 "  style="min-width: 420px;" >    
+<footer class="footer  my-5 "   >    
     
     <div class="link-footer  d-flex justify-content-around ">
     <a class="dropdown-item-1" href="{% url 'my_store' %}"> <i class=" fa fa-store "></i> my Library </a>
@@ -13,7 +13,7 @@
 </footer>
 
 {% else %}
-<footer class="footer my-5 "  style="min-width: 420px;" >
+<footer class="footer my-5 "   >
 <div class="link-footer  d-flex justify-content-around  ">
     <a class="dropdown-item-1" href="{% url 'my_store' %}"> <i class=" fa fa-store "></i> my Library </a>
     <a class="dropdown-item-1" href="{% url 'cart_view' %}"> <i class="fa fa-shopping-cart"></i> card </a>

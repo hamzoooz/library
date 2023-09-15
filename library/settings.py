@@ -167,6 +167,3 @@ CKEDITOR_UPLOAD_PATH = 'media/cheditor/'
 
 
 
-
-
-

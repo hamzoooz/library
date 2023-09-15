@@ -6,7 +6,7 @@
                 <div class=" quote-sections ">
                     {% for quote in qoutes %}
                         <div class="shadow" style="padding: 3px;background-color: #f8f9fa;border-bottom: 1px solid #c0c0c0;margin-bottom: 11px; border-top: 1px solid #c0c0c0; border-radius: 0px 0px 10px 10px ">
-                            <a href="{% url 'user' quote.user %}" class=" shadow cover-in-sngle img-thumbnail rounded img-fluid float-start" style="background-image: url('{{quote.user.profile_image.url}}');background-size: contain; height: 50px; background-repeat: no-repeat; background-position: center; border-radius: 50% !important; width:50px;margin: 0px 4px 0px 2px"> </a>
+                            <a href="{% url 'user' quote.user %}" class=" shadow cover-in-snglequote img-thumbnail rounded img-fluid float-start" style="background-image: url('{{quote.user.profile_image.url}}');background-size: contain; height: 50px; background-repeat: no-repeat; background-position: center; border-radius: 50% !important; width:50px;margin: 0px 4px 0px 2px"> </a>
 
                             <span class="dropdown-toggle float-end " data-bs-toggle="dropdown" aria-expanded="false" style="padding: 0px 9px ;cursor: pointer;"> <i class="fa fa-ellipsis-v fa-lg "></i>
                                 <span>

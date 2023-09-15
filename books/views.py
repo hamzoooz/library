@@ -57,13 +57,12 @@ def frontpage(request ):
         ids.append(i.follower)
         id_user.append(User.objects.get(username=i.follower))
     feed_page = Books.objects.filter(user__in=ids)
+    
     if request.user.is_authenticated:
         users = Profile.objects.exclude(user__in=id_user).exclude(user=request.user)
     else:
         users = Profile.objects.exclude(user__in=id_user)
-
-    # rating = RatingSystem.objects.filter(book=books).count()
-    # print(rating)
+    
     return render(request, 'core/frontpage.html', {
         'trending_books': trending_books, 
         'recent_books': recent_books, 
@@ -73,8 +72,7 @@ def frontpage(request ):
         'users': users,
         # "rating": rating,
         "carousel_images": carousel_images,
-        
-        
+
         })
 
 
@@ -161,7 +159,7 @@ def book_detail(request, slug):
     
     # query = books.name.split()
     query = books.name
-    similar_books = Books.objects.filter( Q(name__icontains=query) | Q(meta_description__icontains=query) | Q(meta_tilte__icontains=query) | Q(meta_keyword__icontains=query) | Q(meta_description__icontains=query) | Q(tags__icontains=query) | Q(available='publised') )[0:20]
+    similar_books = Books.objects.exclude(slug=slug).filter( Q(name__icontains=query) | Q(meta_description__icontains=query) | Q(meta_tilte__icontains=query) | Q(meta_keyword__icontains=query) | Q(meta_description__icontains=query) | Q(tags__icontains=query) | Q(available='publised') )[0:20]
 
     return render(request, 'core/book_detail.html', {
         'books': books, 

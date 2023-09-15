@@ -123,7 +123,6 @@
         <div class="row ">
           <div id="owl_demo_frontpage_feed_book_sugiste" class="owl-carousel">
             {% for user in users %}
-
               {% include 'templates-parts/users.html' %}
 
           {% endfor %}
@@ -132,17 +131,12 @@
   </div>
 {% endif %}
 
-
 {% comment %} {% menu %} {% endcomment %}
-
 
 {% if whatsapp.status %}
   <a href="https://wa.me/{{whatsapp.number}}?text={{ whatsapp.message|urlize }}" class="whatsapp-chat" style="position: fixed; bottom: 11px; z-index: 400;">
   <div class="whatsapp-chat" style=" background-image: url('{{ whatsapp.icon.url  }}'); z-index: 99; background-size: contain; position: sticky; border-radius: 50%; border: 5px #ddd solid; width: 70px; height: 70px; "></div></a>
 {% endif %}
 
-
 {% endblock content %}
 {% block scripts %} {% endblock scripts %}
-
-

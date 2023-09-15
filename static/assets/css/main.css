@@ -188,7 +188,7 @@ li {
 /* card in front page  */
 .add-to-card,
 .download-link , .read-link {
-    font-size: 15px;
+    font-size: 12px;
     padding: 2px;
 }
 
@@ -207,4 +207,32 @@ li {
 
 .rating_user input:checked~label {
     color: #ffd700 !important;
+}
+
+
+@media (max-width: 576px) {
+
+    .add-to-card,
+    .download-link,
+    .read-link {
+        font-size: 10px !important ;
+        padding: 2px;
+    }
+    .coner , .card-img-top{
+    height: 177px !important ;
+    }
+
+    .cover-in-sngle {
+        height: 106px !important;
+        width: 108px !important;
+    }
+        .cover-in-sngle-comment, 
+        .cover-in-sngle-quote{
+            height: 50px !important;
+            width: 50px !important;
+        }
+        .rating_system{
+            font-size: 10px;
+        }
+
 }

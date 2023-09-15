@@ -15,7 +15,7 @@
 
 
 <div class="info shadow "  style="background-image:url('{{ profile.profile_cover_image.url }}'); height:300px; background-position:center;background-size: cover; background-repeat:no-repeat "></div>
-<div class="py-5 ">
+<div class="py-5  ">
     <div class="container ">
 
         <div class="row user-data2 user-data  ">
@@ -58,7 +58,7 @@
                         </p>
                     </div>
                     {% else %}
-                        <a href='{% url "all_messages" %}' class="btn btn-success add-to-card   float-start  p-2 "  style="margin-top: -40px; "> <i class="fa fa-comments "></i> Messages </a>
+                        <a href='{% url "all_messages" %}' class="btn btn-success add-to-card  ms-fs-6 float-start  p-2 "  style="margin-top: -40px; "> <i class="fa fa-comments "></i> Messages </a>
                     {% endif %}
                 {% else %}
                     
@@ -114,7 +114,6 @@
                             <label for="star1"  class="star_user_1" style="font-size: 30px; color: #ccc; cursor: pointer;"   >&#9733;</label>
                         </div>
                     </div><!-- rating pt-3 text-center -->
-
                 </form>
             </div><!-- rating pt-3 text-center -->
             {% endif %}
@@ -122,7 +121,7 @@
                 <div class="row">
 
                     {% if profile.rating %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;  " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px ;"> <i class="fa fa-star  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center  " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -134,7 +133,7 @@
                     {% endif %}
                     
                     {% comment %} join on {% endcomment %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2  "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2  "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;   " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px ;"> <i class="fa fa-clock  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center  " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -146,7 +145,7 @@
 
                     {% comment %} Country {% endcomment %}
                     {% if profile.conutry %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2  "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2  "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;   " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px ;"> <i class="fa fa-earth  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center   " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -159,7 +158,7 @@
                     
                     {% comment %} No. Book {% endcomment %}
                     {% if books %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;   " >
                             <div class="icon-in-user float-start  " style="margin: 13px 7px 0px 10px ;"> <i class="fa fa-book  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center  " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -172,7 +171,7 @@
 
 
                     {% comment %} No.Download {% endcomment %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px;  padding: 10px 0px;   " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px ;"> <i class="fa fa-download  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -184,7 +183,7 @@
                     
 
                     {% comment %} last_login  {% endcomment %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;    " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px; padding-bottom: 5px;"> <i class="fa fa-eye  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -196,7 +195,7 @@
                     
                     
                     {% comment %} Following {% endcomment %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;    " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px; padding-bottom: 5px;"> <i class="fa fa-user  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -208,7 +207,7 @@
 
                     
                     {% comment %} Follower {% endcomment %}
-                    <div class="col-4 col-md-3 col-lg-2 mt-2   "> 
+                    <div class="col-6 col-md-3 col-lg-2 mt-2   "> 
                         <div class="item-in-user bg-light shadow mt-4"  style="font-size: 13px; line-height: 15px; padding: 10px 0px;    " >
                             <div class="icon-in-user float-start " style="margin: 13px 7px 0px 10px; padding-bottom: 5px;"> <i class="fa fa-star  fa-2x"> </i>  </div>
                             <div class="title-for-info text-center " style="line-height: 10px; margin-top: 8px; padding: 4px; " >
@@ -223,20 +222,18 @@
             </div><!-- .col-md-12 -->
         </div><!-- .row -->
 
-        <div id="tabs_user" class="pt-2">
+        <div id="tabs_user" class="pt-2 p-0">
             <ul>
                 <li><a href="#tabs-user-1"> <i class="fa fa-book"></i> Books </a></li>
                 <li><a href="#tabs-user-2"> <i class="fa fa-quote-left"></i> Quotes <i class="fa fa-quote-right"></i> </a></li>
-                <li><a href="#tabs-user-3">Third</a></li>
+                {% comment %} <li><a href="#tabs-user-3">Third</a></li> {% endcomment %}
             </ul>
 
-            <div id="tabs-user-1">
+            <div class="p-0" id="tabs-user-1">
 
                     <div class="trending bg-gradient " style="--bs-bg-opacity: .6;">
                         <h2 class="text- text-lead bg- bg-gradient customNavigation " style="padding: 3px 13px 3px 20px !important;"> <i class="fa fa-chart-line "></i> <a href="{% url 'trending_page' %} " class="text-muted"> Uploaded Books {% if profile.number_of_books %} (<span> {{ books|length }} <span>){% endif %} <i class="fa fa-long-arrow-alt-right"></i> </a>
-                            <a href="{% url 'trending_page' %} " class="btn btn-secondary- float-end pe-4"> <i class="fa fa-expand-alt"></i> </a>
-                            <a class=" text-muted stop-circle-in-frontpage float-end pe-4 "> <i class="fa fa-stop"></i> </a>
-                            <a class=" text-muted play-circle-in-frontpage  float-end pe-4"> <i class="fa fa-play"></i> </a>
+                            <a href="{% url 'trending_page' %} " class="btn btn-secondary- float-end pe-4"></a>
                         </h2>
                         <div class="container-fluid" style="--bs-bg-opacity: .6; background: #f8f9fa; padding: 17px;">
                             <div class="row ">
@@ -288,8 +285,7 @@
                                             <div class="btn btn-warning add-to-card float-start addToCartBtn "> <i class="fa fa-shopping-cart"></i> Add to Card </div>
                                             <span class="float-end fw-bold  ">{{ book.selling_price |stringformat:"d" }}$</span>
                                             {% else %}
-                                            <a download href="{{book.file.url}}" class="btn btn-primary  download-link 
- download_link_to_increase float-start  " incres_number_of_download="{{ book.id }}"  > <i class="fa fa-download"></i> download  <input type="hidden" value="{{book.id}}" class="incres_number_of_download" />  </a><a href="{{book.file.url}}" class="btn btn-success  float-end read-link "> <i class="fa fa-eye"></i> read</a>
+                                            <a download href="{{book.file.url}}" class="btn btn-primary  download-link  download_link_to_increase float-start  " incres_number_of_download="{{ book.id }}"  > <i class="fa fa-download"></i> download  <input type="hidden" value="{{book.id}}" class="incres_number_of_download" />  </a><a href="{{book.file.url}}" class="btn btn-success  float-end read-link "> <i class="fa fa-eye"></i> read</a>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -302,7 +298,7 @@
                 </div>
             </div>
 
-            <div id="tabs-user-2">
+            <div class="p-0" id="tabs-user-2 ">
                 
                 <div class="col-12" id="add_quote_sections">
                     <div class="collapse multi-collapse show" id="multiCollapseExample2">
@@ -364,7 +360,9 @@
 
             </div>
             
-            <div id="tabs-user-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+            <div class="p-0" id="tabs-user-3">
+                <div class="alert alert-dark text-muted " role="alert"> There's no qoutes yet !  </div>
+            </div>
         </div>
 
     </div><!-- .container -->
@@ -378,9 +376,8 @@
 {% if sugist_user %}
 <div class="trending bg-gradient " style="--bs-bg-opacity: .6;">
     <h2 class="text- text-lead bg- bg-gradient customNavigation " style="padding: 3px 13px 3px 20px !important;" > <i class="fa fa-compass "></i> <a href="{% url 'feed_page' %} "  class="text-muted" > Segiste Subscripe <i class="fa fa-long-arrow-alt-right"></i> </a>
-        <a href="{% url 'feed_page' %} " class="btn btn-secondary- float-end pe-4"> <i class="fa fa-expand-alt"></i> </a>
-        <a  class=" text-muted stop-circle-in-frontpage float-end pe-4 "> <i class="fa fa-stop"></i>  </a>
-        <a  class=" text-muted play-circle-in-frontpage  float-end pe-4"> <i class="fa fa-play"></i>  </a>
+        <a href="{% url 'feed_page' %} " class="btn btn-secondary- float-end pe-4">   </a>
+ 
     </h2>
 
     <div class="container-fluid" style="--bs-bg-opacity: .6; background: #f8f9fa; padding: 17px;">
@@ -402,8 +399,6 @@
                     <li><a class="dropdown-item" href="#"> <i class="fa fa-share-square"></i> shar</a></li>
                     <li><a class="dropdown-item" href="#"> <i class="fa fa-triangle-exclamation"></i> Report </a></li>
                   </ul>
-
-
 
               </span>  <br />
               <a href="{% url 'user' user.user %}"> <div class="coner card-img-top lazyOwl  rounded img-thumbnail  mx-auto d-block " style="background-image: url('{{ user.profile_image.url }}') ; width: 8rem; height: 130px; background-position: center; background-size: contain; background-repeat: no-repeat; border-radius: 50% !important; "> </div> </a> <br />
