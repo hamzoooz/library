@@ -1,0 +1,112 @@
+1694814570443	geckodriver	INFO	Listening on 127.0.0.1:53849
+1694814572637	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53850" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\STUDEN~1\\AppData\\Local\\Temp\\rust_mozprofileufy1Qy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694814575736	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694814576001	Marionette	INFO	Listening on port 53874
+Read port: 53874
+WebDriver BiDi listening on ws://127.0.0.1:53850
+1694814576876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53850/devtools/browser/627f65fc-7008-45a7-994d-47cd553cefbd
+1694814620578	Marionette	INFO	Stopped listening on port 53874
+JavaScript warning: https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js, line 19: Script terminated by timeout at:
+set/r<@https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js:19:638163
+
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/password-recipes sync interrupted by shutdown
+console.warn: services.settings: main/password-rules sync interrupted by shutdown
+console.warn: services.settings: main/translations-identification-models sync interrupted by shutdown
+console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/fingerprinting-protection-overrides getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1694814857078	geckodriver	INFO	Listening on 127.0.0.1:54335
+1694814859059	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54336" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\STUDEN~1\\AppData\\Local\\Temp\\rust_mozprofilekyNstr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694814861035	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694814861137	Marionette	INFO	Listening on port 54348
+WebDriver BiDi listening on ws://127.0.0.1:54336
+Read port: 54348
+1694814861685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54336/devtools/browser/190f0c9b-720c-4dec-bc66-ba7066c65628
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 638))
+1694814881556	Marionette	INFO	Stopped listening on port 54348
+Dynamically enable window occlusion 1
+1694814906953	geckodriver	INFO	Listening on 127.0.0.1:54608
+1694814908957	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\STUDEN~1\\AppData\\Local\\Temp\\rust_mozprofilePAfzM0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694814909741	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694814909845	Marionette	INFO	Listening on port 54619
+WebDriver BiDi listening on ws://127.0.0.1:54609
+Read port: 54619
+1694814910218	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54609/devtools/browser/9b62e934-1618-412f-bf42-178b80a8cdeb
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 638))
+JavaScript warning: https://z.moatads.com/teads245638586802/moatvideo.js#_moatApi58214826, line 272: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+JavaScript warning: https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694814933786	Marionette	INFO	Stopped listening on port 54619
+Dynamically enable window occlusion 1
+JavaScript warning: https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+u@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval:1:24
+@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval:1:106
+TY@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval:1:191
+tq@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval line 6946 > eval line 1 > eval line 1 > eval:1:45
+@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:36315
+Kj@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:15826
+Pu@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:10263
+X@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:7446
+Pu/<@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:10329
+qB</<@https://pagead2.googlesyndication.com/bg/D38i8ocviMyns63bFlxz04547CGgVcdJsS8VZS_5djY.js line 2 > eval:6946:34009
+
+1694815157103	geckodriver	INFO	Listening on 127.0.0.1:55146
+1694815159113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55147" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\STUDEN~1\\AppData\\Local\\Temp\\rust_mozprofilecv1Ffa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694815159588	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694815159694	Marionette	INFO	Listening on port 55156
+WebDriver BiDi listening on ws://127.0.0.1:55147
+Read port: 55156
+1694815161009	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55147/devtools/browser/ed469ff9-e799-4147-b729-8d03e2b00dcf
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 638))
+1694815182073	Marionette	INFO	Stopped listening on port 55156
+Dynamically enable window occlusion 1
+1694815512948	geckodriver	INFO	Listening on 127.0.0.1:55698
+1694815514953	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55699" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\STUDEN~1\\AppData\\Local\\Temp\\rust_mozprofileBHWQFw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694815515378	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694815515512	Marionette	INFO	Listening on port 55709
+WebDriver BiDi listening on ws://127.0.0.1:55699
+Read port: 55709
+1694815516693	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55699/devtools/browser/82f61c2d-7ef8-4b36-9bb9-34cb8d7e6e7c
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.589.0_en.html#goog_765985983, line 401: Script terminated by timeout at:
+Fy@https://imasdk.googleapis.com/js/core/bridge3.589.0_en.html#goog_765985983:401:310
+Jy/this.fa@https://imasdk.googleapis.com/js/core/bridge3.589.0_en.html#goog_765985983:398:90
+
+1694815553511	Marionette	INFO	Stopped listening on port 55709
+JavaScript warning: https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js, line 3: Script terminated by timeout at:
+addSupportForGoogleFonts/<@https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js:3:158933
+addSupportForGoogleFonts@https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js:3:158562
+n@https://cdn.taboola.com/libtrc/explore-more.20230913-6-RELEASE.es6.js:3:150
+Manager.prototype.loadExploreMoreModule/<@https://cdn.taboola.com/libtrc/impl.20230913-6-RELEASE.js:19:413068
+start/chainEventCallbacks/</<@https://cdn.taboola.com/libtrc/mawdoo3mena-p30367921/loader.js:86:7396
+start/chainEventCallbacks/<@https://cdn.taboola.com/libtrc/mawdoo3mena-p30367921/loader.js:86:7375
+
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/doh-config sync interrupted by shutdown
+console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/cfr getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))

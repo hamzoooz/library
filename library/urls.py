@@ -44,6 +44,7 @@ urlpatterns = [
     path('', include('chat.urls')),
     # path('', include('adds.urls')),
     path('', include('apis.urls')),
+    path('', include('archive.urls')),
     
     
     
