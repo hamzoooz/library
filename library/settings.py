@@ -97,17 +97,38 @@ LOGIN_URL = 'login'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hamzoooz',
         'USER': 'hamzoooz',
         'PASSWORD': 'Hamza@2020',
-        # 'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
 }
+  
+
+# if DEBUG:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'hamzoooz',
+#             'USER': 'hamzoooz',
+#             'PASSWORD': 'Hamza@2020',
+#             'HOST': 'localhost',
+#             'PORT': '',
+#         }
+#     }
+  
 # DATABASES = {
 #     'default': dj_database_url.parse("postgres://book_hope_com_6aqy_user:VGoXOMVmSnCbEoXEdkgVx5Ow73PpOGGZ@dpg-cjpev3the99c73f82rc0-a.oregon-postgres.render.com/book_hope_com_6aqy")
 #     # 'default': dj_database_url.parse(os.environ("DATABASE_URL"))
@@ -164,6 +185,3 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 CKEDITOR_UPLOAD_PATH = 'media/cheditor/'
-
-
-
