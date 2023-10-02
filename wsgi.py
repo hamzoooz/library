@@ -15,3 +15,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'library.settings')
 
 application = get_wsgi_application()
 
+# ALTER ROLE hamzoooz SET client_encoding TO 'utf8';
+# ALTER ROLE hamzoooz SET default_transaction_isolation TO 'read committed';
+# ALTER ROLE hamzoooz SET timezone TO 'UTC';
